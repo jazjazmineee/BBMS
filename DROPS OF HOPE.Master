@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="DROPS OF HOPE.Master.cs" Inherits="Group11_IT114_MachineProblem.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+            font-size: xx-large;
+        }
+        .auto-style2 {
+            width: 100%;
+        }
+        .auto-style3 {
+            width: 127px;
+            height: 119px;
+        }
+        .auto-style4 {
+            font-size: x-small;
+        }
+        .auto-style5 {
+            text-align: center;
+        }
+        .auto-style6 {
+            font-size: small;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <center><img alt="bloodlogo" class="auto-style3" src="Images/bloodlogo.png" /><br />
+            <br />
+        </center>
+        <div class="auto-style1" style="background-color: #D30000; color: #FFFFFF; font-family: 'Arial Black'"><br class="auto-style4" />
+            <asp:Label ID="Label1" runat="server" Font-Overline="True" Font-Underline="True" Text="DROPS OF HOPE" Font-Names="Bahnschrift SemiBold" Font-Size="45pt"></asp:Label>
+            <br />
+            <span class="auto-style4">&nbsp;</span></div>
+        <table class="auto-style2" style="background-color: #333333; color: #FFFFFF; font-family: 'Bahnschrift SemiBold';">
+            <tr>
+                <td class="auto-style5">
+                    <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="White" NavigateUrl="~/HOME.aspx" Font-Underline="False">HOME</asp:HyperLink>
+                </td>
+                <td class="auto-style5">
+                    <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="White" NavigateUrl="~/optDONATE.aspx" Font-Underline="False">DONATE</asp:HyperLink>
+                </td>
+                <td class="auto-style5">
+                    <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="White" NavigateUrl="~/ListSite.aspx" Font-Underline="False">DONATION SITES</asp:HyperLink>
+                </td>
+                <td class="auto-style5">
+                    <asp:HyperLink ID="HyperLink4" runat="server" ForeColor="White" NavigateUrl="~/MORE INFO.aspx" Font-Underline="False">MORE INFO</asp:HyperLink>
+                </td>
+                <td class="auto-style5">
+                    <asp:HyperLink ID="HyperLink5" runat="server" ForeColor="White" NavigateUrl="~/ABOUTUS.aspx" Font-Underline="False">ABOUT US</asp:HyperLink>
+                </td>
+            </tr>
+        </table>              
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div style="background-color: #333333">
+
+            <table>
+                <tr>
+                    <td>
+                        <asp:HyperLink ID="HyperLink6" runat="server" Font-Names="Calibri Light" Font-Underline="False" ForeColor="White" NavigateUrl="~/Login_DonateBlood.aspx">Admin Log in</asp:HyperLink>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="auto-style5" style="background-color: #D30000; color: #FFFFFF; font-family: Arial;">
+            <strong>
+            <asp:Label ID="Label2" runat="server" Text="Label" CssClass="auto-style6">© DROPS OF HOPE </asp:Label>
+            </strong>
+        </div>
+    </form>
+</body>
+</html>
